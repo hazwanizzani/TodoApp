@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <style>
+        /* Basic styles for simplicity */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .todo-item {
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            padding: 10px;
+            list-style-type: none;
+        }
+        .completed {
+            text-decoration: line-through;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 1em;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 0.5em;
+        }
+        .form-group button {
+            padding: 0.5em 1em;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2em;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 0.5em;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<h1>Todo App</h1>
+<div>
+    <form id="todo-form">
+        <div>
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div>
+            <label for="description">Description</label>
+            <input type="text" id="description" name="description" required>
+        </div>
+        <div>
+            <label for="dueDate">Due Date</label>
+            <input type="date" id="dueDate" name="dueDate" required>
+        </div>
+        <button type="submit">Save</button>
+    </form>
+</div>
+<h2>Todo List</h2>
+<ul id="todo-list"></ul>
+<script src="app.js"></script>
+</body>
+</html>
